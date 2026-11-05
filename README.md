@@ -1,4 +1,4 @@
-# Avaliação Certa · site do serviço
+# Perfil Avaliado · site do serviço
 
 Página estática do serviço de respostas às avaliações do Google. Publicada em **https://avaliacoes.paulojr.dev.br** via GitHub Pages.
 
