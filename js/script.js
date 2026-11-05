@@ -2,7 +2,7 @@
 const CONFIG = {
   NOME: "Avaliação Certa",
   WHATSAPP: "5551989406950", // DDI + DDD + número, só dígitos (TROCAR)
-  EMAIL: "junior.pfo@gmail.com", // TROCAR
+  EMAIL: "contato@paulojr.dev.br", // TROCAR
   API_URL: "" // endpoint do backend (POST {texto,nota,tom} -> {resposta,aprovacao,motivo}); vazio = modo exemplos
 };
 const $ = s => document.querySelector(s);
