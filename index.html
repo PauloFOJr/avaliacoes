@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Avaliação Certa · Respostas às avaliações do Google</title>
+  <meta name="description"
+    content="Respondemos as avaliações do seu negócio no Google em até 24h, no tom da sua marca, por um valor fixo por mês.">
+  <meta name="theme-color" content="#F4F7FA">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Avaliação Certa · Respostas às avaliações do Google">
+  <meta property="og:description" content="Cada avaliação respondida em até 24h, no tom da sua marca.">
+  <meta property="og:url" content="https://avaliacoes.paulojr.dev.br/">
+  <meta property="og:image" content="https://avaliacoes.paulojr.dev.br/img/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2314304F'/%3E%3Cpath d='M16 6l3 7 7 .6-5.3 4.6 1.6 7L16 21.600 9.700 25.200l1.600-7L6 13.600 13 13z' fill='%23F5B13D'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/tema.js"></script>
+</head>
+
+<body id="top">
+  <header class="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top"><span class="logo">★</span><span data-nome>Avaliação Certa</span></a>
+      <nav aria-label="Principal"><a href="#demo">Demonstração</a><a href="#como">Como funciona</a><a
+          href="#preco">Preço</a><a href="#contato">Contato</a>
+        <button class="icon" id="tema" type="button" aria-label="Alternar modo escuro">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <p class="tag">Respostas às avaliações do Google</p>
+        <h1>Cada avaliação respondida em até 24h, no tom <em>certo</em>.</h1>
+        <p class="lead">Clínicas de bairro, salões, oficinas, restaurantes e pet shops de Cachoeirinha, Gravataí e
+          Canoas: nós respondemos as avaliações do seu Perfil da Empresa, com a voz do seu negócio e por um valor fixo
+          por mês.</p>
+        <p class="cta"><a class="btn" href="#demo">Testar a demonstração</a><a class="btn ghost" data-wa
+            href="#contato">Falar no WhatsApp</a></p>
+        <ul class="facts">
+          <li><b>24h</b>para responder</li>
+          <li><b>Seu tom</b>não soa robô</li>
+          <li><b>Você aprova</b>notas baixas</li>
+        </ul>
+      </div>
+      <div class="card mock" aria-label="Exemplo de avaliações e respostas">
+        <p class="stars">★★★★★ <span>Maria S.</span></p>
+        <p>“Fui muito bem atendida, recomendo!”</p>
+        <p class="reply"><b>Resposta publicada</b>Que alegria, Maria! Obrigado pelo carinho. Até a próxima!</p>
+        <p class="stars">★★☆☆☆ <span>João P.</span></p>
+        <p>“Demorou mais do que o combinado.”</p>
+        <p class="reply hold"><b>Aguardando a sua aprovação</b>Lamentamos a demora e queremos entender o que aconteceu…
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="demo">
+      <p class="tag">Demonstração</p>
+      <h2>Cole uma avaliação e veja a resposta.</h2>
+      <p class="sub">Exemplos prontos ou o seu próprio texto. Nada é publicado em lugar nenhum.</p>
+      <div class="chips" id="exemplos" aria-label="Exemplos"></div>
+      <form class="card demo" id="demo-form">
+        <label>Nota<select id="nota">
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+          </select></label>
+        <label>Tom<select id="tom">
+            <option value="acolhedor">Acolhedor</option>
+            <option value="profissional">Profissional</option>
+            <option value="descontraido">Descontraído</option>
+          </select></label>
+        <label class="full">Avaliação do cliente<textarea id="texto" rows="3" maxlength="600"
+            placeholder="Cole aqui o texto da avaliação (pode ficar vazio, como as avaliações só com estrelas)."></textarea></label>
+        <button class="btn full" type="submit">Gerar resposta</button>
+      </form>
+      <div class="card out" id="saida" aria-live="polite" hidden></div>
+    </section>
+
+    <section class="wrap sec" id="como">
+      <p class="tag">Como funciona</p>
+      <h2>Você acompanha, nós respondemos.</h2>
+      <ol class="steps">
+        <li>
+          <h3>Você dá acesso ao perfil</h3>
+          <p>Pelo próprio Google, em poucos cliques. Você pode retirar o acesso quando quiser.</p>
+        </li>
+        <li>
+          <h3>Respondemos no tom do seu negócio</h3>
+          <p>Aprendemos seu jeito de falar, seus serviços e sua assinatura. Cada resposta é específica, não copiada.</p>
+        </li>
+        <li>
+          <h3>Você aprova o que é sensível</h3>
+          <p>Notas baixas e assuntos delicados passam por você antes de ir ao ar.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="wrap sec">
+      <p class="tag">Para quem é</p>
+      <h2>Negócios locais que vivem de indicação.</h2>
+      <ul class="grid6">
+        <li>Salões e barbearias</li>
+        <li>Oficinas mecânicas</li>
+        <li>Restaurantes e lanchonetes</li>
+        <li>Pet shops</li>
+        <li>Lojas do bairro</li>
+        <li>Prestadores de serviço</li>
+      </ul>
+    </section>
+
+    <section class="wrap sec split">
+      <div>
+        <p class="tag">Relatório mensal</p>
+        <h2>Você vê o que mudou.</h2>
+        <p class="sub">Todo mês, um resumo simples no seu WhatsApp: quantas avaliações chegaram, em quanto tempo foram
+          respondidas e o que os clientes mais comentam.</p>
+      </div>
+      <div class="card report" aria-label="Exemplo ilustrativo de relatório">
+        <p class="mini">Exemplo ilustrativo</p>
+        <dl>
+          <div>
+            <dt>Avaliações respondidas</dt>
+            <dd>100%</dd>
+          </div>
+          <div>
+            <dt>Tempo médio de resposta</dt>
+            <dd>9h</dd>
+          </div>
+          <div>
+            <dt>Nota média</dt>
+            <dd>4,6 ★</dd>
+          </div>
+          <div>
+            <dt>Tema mais citado</dt>
+            <dd>Atendimento</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="compromisso">
+      <p class="tag">Nosso compromisso</p>
+      <h2>Reputação se constrói com transparência.</h2>
+      <ul class="checks">
+        <li>Não criamos avaliações falsas nem oferecemos brindes por avaliação.</li>
+        <li>Não inventamos fatos: só afirmamos o que você nos informou.</li>
+        <li>Você controla o acesso e pode revogá-lo a qualquer momento.</li>
+        <li>Tratamos os dados conforme a <a href="privacidade.html">política de privacidade</a>.</li>
+      </ul>
+    </section>
+
+    <section class="wrap sec" id="preco">
+      <div class="card price">
+        <p class="tag">Preço</p>
+        <p class="big">R$ 97<small>/mês por local</small></p>
+        <p>Primeiro mês pela metade. Sem fidelidade: cancele quando quiser.</p>
+        <a class="btn" data-wa href="#contato">Quero começar</a>
+      </div>
+    </section>
+
+    <section class="wrap sec" id="contato">
+      <p class="tag">Contato</p>
+      <h2>Vamos conversar sobre o seu negócio?</h2>
+      <p class="cta"><a class="btn" data-wa href="#contato">WhatsApp</a><a class="btn ghost" data-email
+          href="#contato">E-mail</a><button class="btn ghost" id="copiar" type="button">Copiar e-mail</button></p>
+      <p class="mini" id="email-txt"></p>
+      <form class="card demo" id="contato-form">
+        <label>Nome<input id="c-nome" required></label>
+        <label>WhatsApp<input id="c-zap" inputmode="tel" required></label>
+        <label class="full">Nome do seu negócio<input id="c-neg"></label>
+        <button class="btn full" type="submit">Enviar pelo WhatsApp</button>
+        <p class="mini full">Seus dados não ficam salvos no site: eles só abrem uma mensagem pronta no seu WhatsApp, que
+          você envia.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <p>© <span data-nome>Resposta Certa</span> · <a href="privacidade.html">Política de privacidade</a></p>
+      <p>Desenvolvido por <a class="dev" href="https://paulojr.dev.br" rel="noopener"><strong>Paulo
+            Jr.</strong></a></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
